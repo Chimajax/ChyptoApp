@@ -1,0 +1,172 @@
+.refer-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+
+
+  .refer-page-mid-container {
+    height: 70%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 20;
+    border-radius: 15px;
+    border-top: 2px solid gold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    
+  background-image: linear-gradient(to bottom, #000000, #181818); /* dark purple gradient */
+  background-color: linear-gradient(to bottom, #333, #444); /* 3D black gradient */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6); /* increased depth and darkness */
+  box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.3); /* slight highlight */
+
+  }
+
+  .white {
+    color: white;
+  }
+
+  .referpage-link-load-box {
+    background-image: linear-gradient(to bottom, #000000, #181818); /* dark purple gradient */
+    background-color: linear-gradient(to bottom, #333, #444); /* 3D black gradient */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6); /* increased depth and darkness */
+    box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.3); /* slight highlight */
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    top: 40%;
+    z-index: 50;
+  }
+
+  .refer-paste-button {
+    background-image: linear-gradient(to bottom, #34A8FF, #007bff);
+    background-color: aqua; /* fallback color */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    color: white;
+    border: 0px solid white;
+    border-radius: 8px;
+    width: 99%;
+    height: 20px;
+    z-index: 20;
+  }
+
+  .refer-paste-button:hover {
+    background-image: linear-gradient(to bottom, #2A7AE4, #0069d9);
+  }
+
+  .refer-paste-button-h4 {
+    z-index: 10;
+  }
+
+  .your-referral-link {
+    background-image: linear-gradient(to bottom, #000000, #181818); /* dark purple gradient */
+    background-color: linear-gradient(to bottom, #333, #444); /* 3D black gradient */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6); /* increased depth and darkness */
+    box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.3); /* slight highlight */
+    display: flex;
+    justify-content: center; /* Aligns content to the left */
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    gap: 5px;
+    height: 20px;
+    width: 90%;
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.your-referral-link-1 {
+  max-width: 250px;
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Hides overflow content */
+}
+
+.your-referral-link-2 {
+  background-image: linear-gradient(to bottom, #43c211, #1ad458);
+  background-color: lime; /* fallback color */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  color: white;
+  border: 0px solid white;
+  border-radius: 8px;
+  padding: 0 5px;
+  padding-bottom: 4px;
+  z-index: 20;
+}
+
+.your-referral-link-2:hover {
+  background-image: linear-gradient(to bottom, #18a83c, #107f2a);
+}
+
+.refer-page-mid-container-0 {
+  background-image: linear-gradient(to bottom, #f6f6f6, #efefef);
+  background-color: rgb(230, 255, 230); /* fallback color */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+  color: black;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+.refer-page-mid-container-1 {
+  height: 80%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: black;
+  overflow-y: auto;
+}
+
+.refer-page-mid-container-1ball {
+  background-image: linear-gradient(to bottom, #34A8FF, #007bff);
+  background-color: aqua; /* fallback color */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: auto 8px;
+
+
+}
+
+.refer-page-mid-container-1i {
+  background-image: linear-gradient(to bottom, #f6f6f6, #efefef);
+  background-color: rgb(230, 255, 230); /* fallback color */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 0;
+  margin-right: auto;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 8px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.refer-page-mid-container-1ii {
+  display: flex;
+  margin-left: auto;
+
+}
+
+.refer-page-mid-container-1b {
+  color: white;
+  margin-top: 13%;
+}

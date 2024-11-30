@@ -1,0 +1,243 @@
+.home-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+
+  .home-page-container-top {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+  }
+
+  .home-page-container-top-1 {
+    display: flex;
+    max-width: 50%;
+    overflow-x: hidden;
+  }
+
+  .home-page-container-balance {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    height: 60px;
+
+    z-index: 20;
+  }
+
+  .home-page-container-balance-1 {
+    position: relative;
+    margin: auto 0;
+    min-width: 12%;
+    height: 60%;
+  }
+
+  .home-page-container-balance-2 {
+    margin-left: 10px;
+    margin: auto 0;
+    font-size: 21px;
+    font-weight: bold;
+  }
+  
+  .imageuu {
+    cursor: pointer; /* Adds a pointer cursor to indicate it's tappable */
+    width: 150px;    /* Adjust size as needed */
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .home-page-pre-mid-container-1 {
+    border-radius: 15px;
+    border: 2px solid gold;
+    
+    background-image: linear-gradient(to bottom, #000000, #181818); /* dark purple gradient */
+    background-color: linear-gradient(to bottom, #333, #444); /* 3D black gradient */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6); /* increased depth and darkness */
+    box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.3); /* slight highlight */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 80%;
+    min-width: 25%;
+    padding: 0 9px;
+    margin: 0px 5px;
+    color: white;
+
+  }
+
+  .home-page-pre-mid-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 8%;
+    width: 100%;
+    position: fixed;
+    bottom: 71%;
+    z-index: 22;
+    overflow-x: auto;
+  }
+
+  .home-page-mid-container {
+    height: 70%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 20;
+    border-radius: 15px;
+    border-top: 2px solid gold;
+    
+  background-image: linear-gradient(to bottom, #000000, #181818); /* dark purple gradient */
+  background-color: linear-gradient(to bottom, #333, #444); /* 3D black gradient */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6); /* increased depth and darkness */
+  box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.3); /* slight highlight */
+
+  }
+
+  .home-page-sign-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 0px auto;
+    margin-top: 28px;
+    border-radius: 50%;
+  }
+
+  .home-page-sign-container:active, .home-page-sign-container-1:active {
+  transform: translate(-1.05);    
+  width: 280px;
+    height: 280px;
+    margin: 0 auto;
+  }
+
+  .home-page-sign-container-1 {
+    position: relative;
+    width: 310px;
+    height: 310px;
+    margin: 0 auto;
+  }
+
+  .home-page-sign-container .level {
+    color: white;
+    font-size: 50px;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 10;
+  }
+
+  .home-page-mine-container {
+    width: 85%;
+    height: 90px;
+    position: fixed;
+    bottom: 13%;
+    left: 7%;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-image: linear-gradient(to bottom, #fcf9f9, #fdf9f9); /* dark purple gradient */
+    background-color: linear-gradient(to bottom, #d2d2d2, #fffefe); /* 3D black gradient */
+    box-shadow: 0px 8px 16px rgba(228, 228, 228, 0.6); /* increased depth and darkness */
+    box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.3); /* slight highlight */
+  }
+
+  .home-page-mine-container:hover {
+    background-image: linear-gradient(to bottom, #000000, #181818); /* dark purple gradient */
+    background-color: linear-gradient(to bottom, #333, #444); /* 3D black gradient */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6); /* increased depth and darkness */
+    box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.3); /* slight highlight */
+    border: 1px solid white;
+    color: white;
+
+  }
+
+  .home-page-mine-container .level {
+    font-size: 50px;
+  }
+
+  .home-page-dialouge-box {
+    background-image: linear-gradient(to bottom, #000000, #181818); /* dark purple gradient */
+    background-color: linear-gradient(to bottom, #333, #444); /* 3D black gradient */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6); /* increased depth and darkness */
+    box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.3); /* slight highlight */
+    border-radius: 10px;
+    border: 1px solid white;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+    width: 60%;
+
+  }
+
+  .home-page-dialouge-box-note {
+    color: white;
+    height: 70%;
+    width: auto;
+    padding: 20px 10px;
+    overflow: hidden;
+  }
+
+  .home-page-dialouge-box-note-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    height: 70%;
+    width: auto;
+    padding: 20px 10px;
+    overflow: hidden;
+  }  .home-page-dialouge-box-note-1 div {margin-bottom: 10px;}
+
+  .home-page-dialouge-box-button {
+        display: flex;
+        justify-content: center;
+        border-radius: 6px;
+        background-color: white;
+        color: black;
+        width: 80%;
+        height: 30%;
+        padding: 3px 5px;
+        font-weight: bold;
+        margin: 15px auto;
+  }
+
+  
+
+  .home-page-dialouge-box-button:hover {
+    background-image: linear-gradient(to bottom, #000000, #181818); /* dark purple gradient */
+    background-color: linear-gradient(to bottom, #333, #444); /* 3D black gradient */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6); /* increased depth and darkness */
+    box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.3); /* slight highlight */
+    color: white;
+    border: 1px solid white;
+  }
+
+  .home-page-dialouge-box-11 {
+    background-image: linear-gradient(to bottom, #000000, #181818); /* dark purple gradient */
+    background-color: linear-gradient(to bottom, #333, #444); /* 3D black gradient */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6); /* increased depth and darkness */
+    box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.3); /* slight highlight */
+    border-radius: 10px;
+    border: 1px solid white;
+    z-index: 120;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+    color: white;
+    padding: 20px 30px;
+  }

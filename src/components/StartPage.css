@@ -1,0 +1,170 @@
+
+.start-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .start-page-container-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    color: red;
+    z-index: 50;
+    text-align: center;
+  }
+
+
+  .start-container-pic {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 20;
+  }
+
+   .header {
+    width: 100%;
+    text-align: center;
+  }
+
+
+.start-page-container-button {
+  display: flex;
+  width: 180px;
+  height: 60px;
+  background-image: linear-gradient(to bottom, #34A8FF, #007bff);
+  background-color: aqua; /* fallback color */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2);
+  color: white;
+  border-radius: 10px;
+  border: 0;
+  align-items: center;
+}
+
+.start-page-container-button:hover {
+  background-image: linear-gradient(to bottom, #2A7AE4, #0069d9);
+}
+
+.start-page-container-button p {
+ display: flex;
+ margin: 0 auto;
+}
+
+/* src/components/StartPage.css */
+.loader {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .start-button {
+    padding: 10px 20px;
+    background-color: lightgreen;
+    color: black;
+  }
+
+
+  .start-page-refer-box-0 {
+    background-image: linear-gradient(to bottom, #000000, #181818); /* dark purple gradient */
+    background-color: linear-gradient(to bottom, #333, #444); /* 3D black gradient */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6); /* increased depth and darkness */
+    box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.3); /* slight highlight */
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 5px;
+    width: 90%;
+  }
+
+  .start-page-refer-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 7px;
+  }
+
+  .start-page-refer-box input[type="text"] {
+    display: flex;
+    border-radius: 7px;
+    width: 85%;
+    color: red;
+    /* pointer-events: none; */
+  }
+  
+   .paste-button {
+    background-image: linear-gradient(to bottom, #34A8FF, #007bff);
+    background-color: aqua; /* fallback color */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    color: white;
+    border: 0px solid white;
+    border-radius: 8px;
+  }
+
+  .paste-button:hover {
+    background-image: linear-gradient(to bottom, #2A7AE4, #0069d9);
+  }
+
+  .start-page-refer-box-1 {
+    width: 100%;
+  }
+
+  .no-refer-link {
+    width: 100%;
+    background-image: linear-gradient(to bottom, #ff3434, #cd0000);
+    background-color: red; /* fallback color */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 3px 0;
+  }
+
+  .no-refer-link:hover {
+    background-image: linear-gradient(to bottom, #7a1313, #580101);
+    background-color: red; /* fallback color */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .refer-link-load-box {
+    background-image: linear-gradient(to bottom, #000000, #181818); /* dark purple gradient */
+    background-color: linear-gradient(to bottom, #333, #444); /* 3D black gradient */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6); /* increased depth and darkness */
+    box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.3); /* slight highlight */
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+  }

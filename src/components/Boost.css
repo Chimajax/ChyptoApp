@@ -1,0 +1,168 @@
+.boost-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+
+
+  .boost-page-mid-container {
+    height: 85%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 20;
+    border-radius: 15px;
+    border-top: 2px solid gold;
+    color: whitw;
+    
+  background-image: linear-gradient(to bottom, #000000, #181818); /* dark purple gradient */
+  background-color: linear-gradient(to bottom, #333, #444); /* 3D black gradient */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6); /* increased depth and darkness */
+  box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.3); /* slight highlight */
+
+  }
+
+  .boost-page-mid-container-1 {
+    color: white;
+    height: 35%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .boost-page-mid-container-1i {
+    background-image: linear-gradient(to bottom, #000000, #181818); /* dark purple gradient */
+    background-color: linear-gradient(to bottom, #333, #444); /* 3D black gradient */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6); /* increased depth and darkness */
+    box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.3); /* slight highlight */
+    display: flex;
+    width: 80%;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 9px 10px;
+    }
+
+    .boost-page-mid-container-1i button {
+        display: flex;
+        border-radius: 6px;
+        margin-left: auto;
+        background-color: white;
+        color: black;
+    }
+
+    .boost-page-mid-container-1i button:hover {
+        background-image: linear-gradient(to bottom, #000000, #181818); /* dark purple gradient */
+    background-color: linear-gradient(to bottom, #333, #444); /* 3D black gradient */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6); /* increased depth and darkness */
+    box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.3); /* slight highlight */
+    color: white;
+
+    }
+
+    
+
+
+  .boost-page-mid-container-2 {
+    color: white;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .boost-page-mid-container-2i {
+    background-image: linear-gradient(to bottom, #000000, #181818); /* dark purple gradient */
+    background-color: linear-gradient(to bottom, #333, #444); /* 3D black gradient */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6); /* increased depth and darkness */
+    box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.3); /* slight highlight */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 9px 10px;
+    margin-bottom: 15px;
+    }
+
+    .boost-page-mid-container-2ii {
+        display: flex;
+        width: 100%;
+    }
+
+    .boost-page-mid-container-2i button {
+        display: flex;
+        border-radius: 6px;
+        margin-left: auto;
+        background-color: white;
+        color: black;
+        height: auto;
+        padding: 3px 5px;
+        font-weight: bold;
+    }
+
+    .boost-page-mid-container-2i button:hover {
+        background-image: linear-gradient(to bottom, #000000, #181818); /* dark purple gradient */
+    background-color: linear-gradient(to bottom, #333, #444); /* 3D black gradient */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6); /* increased depth and darkness */
+    box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.3); /* slight highlight */
+    color: white;
+
+    }
+
+    .boost-page-dialougeBox {
+        background-image: linear-gradient(to bottom, #000000, #181818); /* dark purple gradient */
+        background-color: linear-gradient(to bottom, #333, #444); /* 3D black gradient */
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6); /* increased depth and darkness */
+        box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.3); /* slight highlight */
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid white;
+        border-radius: 10px;
+        z-index: 110;
+        position: fixed;
+        top: 40%;
+
+    }
+
+    .boost-page-dialougeBox button {
+        display: flex;
+        border-radius: 6px;
+        background-color: white;
+        color: black;
+        height: auto;
+        padding: 3px 5px;
+        font-weight: bold;
+        justify-content: center;
+    }
+
+    .boost-page-dialougeBox button:hover {
+        background-image: linear-gradient(to bottom, #000000, #181818); /* dark purple gradient */
+    background-color: linear-gradient(to bottom, #333, #444); /* 3D black gradient */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6); /* increased depth and darkness */
+    box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.3); /* slight highlight */
+    color: white;
+
+    }
+
+    .boost-page-dialougeBox-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 200px;
+        min-height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .boost-page-dialougeBox-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        margin-bottom: 10px;
+    }

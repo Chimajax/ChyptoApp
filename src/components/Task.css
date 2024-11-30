@@ -1,0 +1,158 @@
+.task-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.refer-page-done-button {
+    background-image: linear-gradient(to bottom, #43c211, #1ad458);
+  background-color: lime; /* fallback color */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-left: auto;
+  border-radius: 8px;
+  padding: 0 5px;
+  z-index: 20;
+}
+
+.task-page-mid-container {
+  height: 85%;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 20;
+  border-radius: 15px;
+  border-top: 2px solid gold;
+  color: black;
+  overflow-y: auto;
+  
+background-image: linear-gradient(to bottom, #000000, #181818); /* dark purple gradient */
+background-color: linear-gradient(to bottom, #333, #444); /* 3D black gradient */
+box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6); /* increased depth and darkness */
+box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.3); /* slight highlight */
+
+}
+
+
+.task-page-mid-container-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+    height: 40%;
+    overflow-y: scroll;
+    margin: 0 auto;
+    color: white;
+}
+
+.height-100px {
+  height: 100px;
+}
+
+.to-set-task {
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 5%;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 2px 10px;
+  overflow: hidden; /* Hide overflow content (sliding out) */
+  position: relative;
+}
+
+.to-set-task-1 {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 90%;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 7px 0;
+  
+  /* Initial state for the animation */
+  position: absolute;
+  transform: translateX(100%); /* Start off-screen to the right */
+  opacity: 0; /* Initially invisible */
+  animation: slideInOut 8s infinite; /* Apply the animation, run indefinitely */
+}
+
+/* Button Styling */
+.to-set-task-1-button {
+  background-image: linear-gradient(to bottom, #43c211, #1ad458);
+  background-color: lime; /* fallback color */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-left: auto;
+  font-size: 10px;
+  border-radius: 8px;
+  padding: 9px 14px;
+  z-index: 20;
+}
+
+.to-set-task-1-button:hover {
+  background-image: linear-gradient(to bottom, #d0e90d, #c7e716);
+  background-color: rgb(174, 216, 20); /* fallback color */
+  box-shadow: 0px 2px 4px rgba(172, 204, 11, 0.2);
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-left: auto;
+  font-size: 14px;
+  border-radius: 8px;
+  padding: 0 5px;
+  z-index: 20;
+}
+
+/* Keyframes for the sliding animation */
+@keyframes slideInOut {
+  0% {
+    transform: translateX(100%); /* Start off-screen to the right */
+    opacity: 0; /* Initially invisible */
+  }
+  10% {
+    transform: translateX(0); /* Slide in to the screen */
+    opacity: 1; /* Fade in */
+  }
+  40% {
+    transform: translateX(0); /* Stay on screen */
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-100%); /* Slide out to the left */
+    opacity: 0; /* Fade out */
+  }
+  100% {
+    transform: translateX(100%); /* Start over, off-screen to the right */
+    opacity: 0; /* Invisible */
+  }
+}
+
+/* Staggered animation for each child element */
+.to-set-task-1:nth-child(1) {
+  animation-delay: 0s; /* First element shows immediately */
+}
+
+.to-set-task-1:nth-child(2) {
+  animation-delay: 4s; /* Second element appears after 4 seconds */
+}
+
+.to-set-task-1:nth-child(3) {
+  animation-delay: 8s; /* Third element appears after 8 seconds */
+}
+
+/* Add more nth-child rules if needed for additional elements */

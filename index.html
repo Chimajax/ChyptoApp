@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chypto</title>
+    <style src="/src/App.css"></style>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+        window.Telegram.WebApp.console.log('Hey there!');
+    </script>
+    <meta http-equiv="Permissions-Policy" content="clipboard-write=(self)">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <!--<script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="Chypto_Official_Bot" data-size="small" data-onauth="onTelegramAuth(user)"></script> -->
+    <script>
+      window.onload = function() {
+        // Telegram SDK will now be available on window.Telegram.WebApp
+        if (window.Telegram && window.Telegram.WebApp) {
+          console.log("Telegram SDK loaded successfully.");
+        } else {
+          console.log("Telegram SDK not available.");
+        }
+        
+        // Log the main link
+        const mainLink = window.location.href; // Get the main link
+        console.log("Main Link: ", mainLink);
+
+        // Check if the URL contains the 'start' parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const referralCode = urlParams.get('start'); // This gets the referral code
+
+        // Log the referral code
+        if (referralCode) {
+            console.log("Referral Code: ", referralCode);
+        } else {
+            console.log("No referral code found ooooooo.");
+        }
+      };
+    </script>
+  </body>
+</html>
