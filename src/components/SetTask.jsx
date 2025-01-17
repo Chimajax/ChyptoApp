@@ -81,7 +81,7 @@ const SetTask = () => {
         const userDoc = await getDoc(userDocRef);
         if (userDoc.exists()) {
           setTasks(userDoc.data());
-        }
+        } else {setTasks(userDoc.data());}
       } catch (error) {
         console.error('Error fetching tasks:', error);
       }
@@ -141,6 +141,7 @@ const SetTask = () => {
     const newPaidBalance = balance - chargingPrice; 
 
     const userDocRef = doc(db, 'users', String(userId)); // Use the userId state variable
+      handleAddTask1(e);
     try {
       const docSnap = await getDoc(userDocRef);
   
@@ -157,7 +158,6 @@ const SetTask = () => {
       return;
      }
 
-     handleAddTask1(e);
     
     } else {
       setAddingBox(false);
@@ -215,9 +215,13 @@ const SetTask = () => {
       setAddingBox(false);
     } catch (error) {
       console.error('Error adding task:', error);
+      return;
     } finally {
       setLoading(false);
+      //off the box
+    setAddingBox(false);
     }
+    
   };
 
 
