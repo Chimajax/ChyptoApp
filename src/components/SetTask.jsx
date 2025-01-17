@@ -81,7 +81,7 @@ const SetTask = () => {
         const userDoc = await getDoc(userDocRef);
         if (userDoc.exists()) {
           setTasks(userDoc.data());
-        } else {setTasks(userDoc.data());}
+        } else {setDoc(userDocRef);}
       } catch (error) {
         console.error('Error fetching tasks:', error);
       }
