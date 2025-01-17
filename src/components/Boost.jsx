@@ -203,6 +203,12 @@ const Boost = () => {
     setDialougeBox('')
   }
 
+  const handleVisitLink = () => {
+  // Open the link in a new tab
+  window.open("https://poawooptugroo.com/4/8808518", "_blank");
+};
+
+
   if (loading) {
     return <div className='start-page-container'><div className='loader'></div></div>;
   }
@@ -232,7 +238,7 @@ const Boost = () => {
           <div className='boost-page-mid-container-1'>
           <h3>Boost Coins</h3>
             <div className='boost-page-mid-container-1i'>
-              Play A Quick Game <button>GO</button>
+              See Latest Offers <button onClick={handleVisitLink}>GO</button>
             </div>
 
 
