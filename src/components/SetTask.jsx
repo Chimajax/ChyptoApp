@@ -75,20 +75,24 @@ const SetTask = () => {
 
 
   useEffect(() => {
-    const fetchTasks = async () => {
-      try {
-        const userDocRef = doc(db, 'tasks', userId);
-        const userDoc = await getDoc(userDocRef);
-        if (userDoc.exists()) {
-          setTasks(userDoc.data());
-        } else {setDoc(userDocRef);}
-      } catch (error) {
-        console.error('Error fetching tasks:', error);
+  const fetchTasks = async () => {
+    try {
+      const userDocRef = doc(db, 'tasks', userId);
+      const userDoc = await getDoc(userDocRef);
+      if (userDoc.exists()) {
+        setTasks(userDoc.data());
+      } else {
+        await setDoc(userDocRef, {}); // Initialize with an empty object
+        setTasks({});
       }
-    };
+    } catch (error) {
+      console.error('Error fetching tasks:', error);
+    }
+  };
 
-    fetchTasks();
-  }, [userId]);
+  fetchTasks();
+}, [userId]);
+
 
   const handleAddTaskBox = () => {
     if (youtube === true && twitterX === true && telegram === true) {
