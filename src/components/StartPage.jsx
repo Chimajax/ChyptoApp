@@ -37,6 +37,19 @@ const StartPage = () => {
 
       console.log('Referral from initData:', referralData); // Log the referral from initData
 
+      // Function to get query parameters
+function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+}
+
+// Extract and store the referral ID
+const referralId = getQueryParam("start");
+if (referralId) {
+    console.log("Referral ID is a:", referralId);
+}
+
+
       if (user) {
         setUserData(user); // Save user data to state
         // Prepare Firestore document data
